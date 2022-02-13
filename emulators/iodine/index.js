@@ -1,1 +1,0 @@
-const iframes = iFrameResize( [{options}], [style.css] || [iframe] );
