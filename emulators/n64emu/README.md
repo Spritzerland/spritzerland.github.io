@@ -66,19 +66,5 @@ If you want to actually do debugging you will want to get the Windows version wo
   - and replace the name of that rom in mymain.cpp
   - `sprintf(rom_name, "%s", "game.z64");`
 - Note - running in Release mode runs much faster than in Debug though you won't be able to set breakpoints
-
-![pcversion](screenshots/pcversion.png)
-
-# Screenshots
-
-![screenshot](screenshots/screenshot1.PNG)
-![screenshot](screenshots/screenshot2.PNG)
-![screenshot](screenshots/screenshot3.PNG)
-![screenshot](screenshots/screenshot4.PNG)
-![screenshot](screenshots/screenshot5.PNG)
-
-# iPhone 13 Pro
-![screenshot](screenshots/iphone.jpg)
-
 # References
 - ParaLLEl N64 Core https://github.com/libretro/parallel-n64
