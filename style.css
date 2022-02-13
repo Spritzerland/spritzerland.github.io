@@ -1,0 +1,52 @@
+
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  
+  color: white;
+  
+  background: rgb(25, 160, 238);
+  background: radial-gradient(circle, rgb(63, 251, 251) 0%, rgb(30, 223, 133) 100%);
+  background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+a {
+  color: white;
+}
+
+button {
+  background-color: #c7f2ff;
+  border: 2px solid #baefff;
+  border-radius: 4px;
+  padding: 3px 5px;
+}
+
+button:hover {
+  background-color: #b3ebff;
+  border: 2px solid #99e7ff;
+  cursor: pointer;
+}
+
+.buttons {
+  background-color: #c7f2ff;
+  border: 2px solid #baefff;
+  border-radius: 4px;
+  padding: 5px 7px;
+  color: black;
+  
+  width: 600px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
