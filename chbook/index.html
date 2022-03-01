@@ -8,9 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/style.css">
+  <script src="script.js"></script>
 <body>
- <center> <h1>  </h1>
-  <p>  </p>
+ <h1>Bookmarklets</h1>
+  <p>Drag these to your bookmarks bar and click on them to execute them</p>
 
 
 
@@ -19,70 +20,15 @@
 
 
 
-<script>
-function changeIcon(src) {
-  var link = document.createElement('link');
-  link.rel = 'shortcut icon';
-  link.href = src;
-  document.head.appendChild(link);
-}
-function fillHistory () {
-  for (let i = 1; i < 10000; i++) {
-    window.history.pushState({}, '', window.location.pathname + '?q=' + i)
-  }
-  // Set location back to the initial location, so user does not notice
-  window.history.pushState({}, '', window.location.pathname)
-}
-	
-function button () {
-	var input = prompt("Enter name of page", "")
-	document.title = input
-console.log('the website name is ' + input)
 
-}
-	
-function fill () {
-	fillHistory()
-	alert("Filled history!")
-}
-</script>
-<script>
-function fbutton () {
-var finput = prompt("Paste favicon link", "")
-console.log('The favicon link is now ' + finput)
-changeIcon(finput)
-	
-}
-</script>
+ <!-- <button onclick="fbutton()">Favicon</button>
+  <button onclick="fill()">FILL THE HISTORY!!!</button>
+ <button onclick="button()">Name</button>
+ <button onclick="ram()">Make chrome unusable</button>
+ -->
 
-<script>
-	function ram () {
-    var input;
-    input = prompt('are you sure you want to do this? this will bypass extension blockers but may make chrome have degraded performance. type no or yes');
-    if (input === null) {
-        return; //break out of the function early
-    }
-    switch (input) {
-    case 'yes':
-	alert("helo am going to fix block")
-	const data = new Array(1000000).fill('ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªª')
-        break;
-    case 'no':
-        alert("cancelled")
-		return;
-        break;
-    }
-}
-	</script>
-
-
-<button onclick="button()">Name</button>
-<button onclick="fbutton()">Favicon</button>
-<button onclick="fill()">FILL THE HISTORY!!!</button>
-<button onclick="ram()">Make chrome unusable</button>
-
-
-	
+	<p style="font-size:25px"><b><a href="javascript:(function()%7Bfunction%20fillHistory%20()%20%7B%0A%20%20for%20(let%20i%20%3D%201%3B%20i%20%3C%2010000%3B%20i%2B%2B)%20%7B%0A%20%20%20%20window.history.pushState(%7B%7D%2C%20''%2C%20window.location.pathname%20%2B%20'%3Fq%3D'%20%2B%20i)%0A%20%20%7D%0A%20%20%2F%2F%20Set%20location%20back%20to%20the%20initial%20location%2C%20so%20user%20does%20not%20notice%0A%20%20window.history.pushState(%7B%7D%2C%20''%2C%20window.location.pathname)%0A%7D%0A%0A%0AfillHistory()%0Aalert(%22Filled%20history!%22)%7D)()%3B">Coverup</a></b></p>
+  <p>Coverup is a history flooder, designed to hide your history.</p>
 	
 <script>
 			document.body.onkeyup = function(e) {
@@ -110,7 +56,7 @@ changeIcon(finput)
 
 
 
-	</center>
+
 
 	</body>
 </html>

@@ -4,34 +4,34 @@ body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
   
-  color: white;
+  color: #b7b8c4;
   
-  background: rgb(25, 160, 238);
-  background: radial-gradient(circle, rgb(63, 251, 251) 0%, rgb(30, 223, 133) 100%);
+  background: rgb(15, 22, 26);
+  background: radial-gradient(circle, rgb(8, 11, 29) 0%, rgb(27, 27, 27) 100%);
   background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
 
 a {
-  color: white;
+  color: #b7b8c4;
 }
 
 button {
-  background-color: #c7f2ff;
-  border: 2px solid #baefff;
+  background-color: #336c7a;
+  border: 2px solid #142f3b;
   border-radius: 4px;
   padding: 3px 5px;
 }
 
 button:hover {
-  background-color: #b3ebff;
-  border: 2px solid #99e7ff;
+  background-color: #226479;
+  border: 2px solid #29556e;
   cursor: pointer;
 }
 
 .buttons {
-  background-color: #c7f2ff;
-  border: 2px solid #baefff;
+  background-color: #226479;
+  border: 2px solid #29556e;
   border-radius: 4px;
   padding: 5px 7px;
   color: black;
