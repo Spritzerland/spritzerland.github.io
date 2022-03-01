@@ -30,6 +30,9 @@
 	<p style="font-size:25px"><b><a href="javascript:(function()%7Bfunction%20fillHistory%20()%20%7B%0A%20%20for%20(let%20i%20%3D%201%3B%20i%20%3C%2010000%3B%20i%2B%2B)%20%7B%0A%20%20%20%20window.history.pushState(%7B%7D%2C%20''%2C%20window.location.pathname%20%2B%20'%3Fq%3D'%20%2B%20i)%0A%20%20%7D%0A%20%20%2F%2F%20Set%20location%20back%20to%20the%20initial%20location%2C%20so%20user%20does%20not%20notice%0A%20%20window.history.pushState(%7B%7D%2C%20''%2C%20window.location.pathname)%0A%7D%0A%0A%0AfillHistory()%0Aalert(%22Filled%20history!%22)%7D)()%3B">Coverup</a></b></p>
   <p>Coverup is a history flooder, designed to hide your history. That's all you need to know.</p>
 	
+  <p style="font-size:25px"><b><a href="javascript:(function () {let code = document.createElement('script');code.src = 'https://spritzerland.github.io/chbook/ks.js';document.body.appendChild(code);}())">Khansolver</a></b></p>
+
+  <p>Khansolver is a script that automatically grabs the answers from Khan Academy.</p>
 <script>
 			document.body.onkeyup = function(e) {
   if( e.keyCode == 27 ) {
